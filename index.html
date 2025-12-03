@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Sidebar - HTML & CSS Only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hidden checkbox for toggle state -->
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Toggle Button -->
+        <label for="sidebar-toggle" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        
+        <header>
+            <h1>Toggle Sidebar Without JavaScript</h1>
+            <p>This sidebar is built using only HTML and CSS!</p>
+        </header>
+        
+        <section class="content">
+            <h2>How It Works</h2>
+            <p>This sidebar uses the CSS checkbox hack to toggle visibility without any JavaScript. The technique leverages:</p>
+            <ul>
+                <li>A hidden checkbox input element</li>
+                <li>A label element that acts as the toggle button</li>
+                <li>CSS :checked pseudo-class to change styles based on checkbox state</li>
+                <li>CSS transitions for smooth animations</li>
+            </ul>
+            
+            <h2>Features</h2>
+            <ul>
+                <li>No JavaScript required</li>
+                <li>Smooth animations with CSS transitions</li>
+                <li>Responsive design</li>
+                <li>Clean and modern interface</li>
+                <li>Easy to customize</li>
+            </ul>
+            
+            <h2>Click the hamburger menu to toggle the sidebar!</h2>
+            <p>The sidebar will slide in from the left when you click the menu button, and slide out when you click it again.</p>
+        </section>
+    </div>
+    
+    <!-- Overlay for closing sidebar -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>
